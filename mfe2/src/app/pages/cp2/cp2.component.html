@@ -1,0 +1,18 @@
+<p>cp2 works!</p>
+
+<div>
+  <label for="phoneInput">Numéro de téléphone : </label>
+  <input
+    class="form-control"
+    id="phoneInput"
+    type="text"
+    [(ngModel)]="phoneNumber"
+    (ngModelChange)="onInputChange($event)"
+    mask="+(000) 000-0000 S A"
+  />
+</div>
+
+<ul class="list-group">
+  <li class="list-group-item">Numéro de téléphone saisi : {{ phoneNumber }}</li>
+  <li class="list-group-item">Numéro de téléphone saisi : {{ phoneNumber2 }}</li>
+</ul>

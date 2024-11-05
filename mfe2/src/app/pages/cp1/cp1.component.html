@@ -1,0 +1,24 @@
+<p>cp1 works!</p>
+
+<div class="container mt-5">
+  <h2>Liste des Utilisateurs</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>ID</th>
+        <th>Titre</th>
+        <th>Complété</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item.userId }}</td>
+        <td>{{ item.id }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.completed ? 'Oui' : 'Non' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
